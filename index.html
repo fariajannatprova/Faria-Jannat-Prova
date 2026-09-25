@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faria Jannat Prova — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F5EF; --ink:#232A20; --accent:#8B6A3B; --sage:#5C6B57; --rule:#DCD5C4;
+    --bg-card:#FFFEFB;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1B1E17; --ink:#EDE8DC; --accent:#C7A15E; --sage:#9BAA95; --rule:#3A3C33; --bg-card:#22261D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1B1E17; --ink:#EDE8DC; --accent:#C7A15E; --sage:#9BAA95; --rule:#3A3C33; --bg-card:#22261D;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:700px; margin:0 auto; padding:56px 24px 80px;}
+  h1,h2{font-family:'Source Serif 4',Georgia,serif; font-weight:700; margin:0;}
+  header.hero{margin-bottom:48px;}
+  header.hero h1{font-size:clamp(2rem,6vw,2.6rem); letter-spacing:-0.01em;}
+  header.hero p.role{color:var(--accent); font-size:1.05rem; margin:8px 0 18px; font-weight:600;}
+  header.hero p.contact{color:var(--sage); font-size:0.92rem; margin:0;}
+  header.hero p.contact a{color:var(--sage);}
+  section{margin-bottom:40px;}
+  section h2{font-size:1.3rem; margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid var(--rule);}
+  section p.lede{max-width:62ch;}
+  ul{margin:0; padding-left:1.1em;}
+  li{margin-bottom:8px; max-width:62ch;}
+  .entry{margin-bottom:18px;}
+  .entry .title{font-weight:600; font-size:1.02rem;}
+  .entry .meta{color:var(--sage); font-size:0.88rem; margin-bottom:6px;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:4px;}
+  .tag{font-size:0.85rem; color:var(--ink); background:var(--bg-card); border:1px solid var(--rule); padding:4px 10px; border-radius:3px;}
+  .cols{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  @media (max-width:560px){.cols{grid-template-columns:1fr;}}
+  .refs{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  @media (max-width:560px){.refs{grid-template-columns:1fr;}}
+  .ref .title{font-weight:600;}
+  .ref .meta{color:var(--sage); font-size:0.88rem;}
+  footer{color:var(--sage); font-size:0.85rem; padding-top:24px; border-top:1px solid var(--rule);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Faria Jannat Prova</h1>
+    <p class="role">Human Resource Management · Aspiring Academician</p>
+    <p class="contact">Lalkhan Bazar, Chattogram, Bangladesh · +880 1602940554 · <a href="mailto:fariaprova99@gmail.com">fariaprova99@gmail.com</a></p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p class="lede">An HRM and Business Administration professional whose path into teaching has been built deliberately. Academic grounding through BBA and MBA studies is paired with active research on AI in HR, sustainable HRM, and gender and career advancement, alongside industry exposure and a long-standing commitment to mentoring and guiding others.</p>
+  </section>
+
+  <section>
+    <h2>Teaching Philosophy</h2>
+    <p class="lede">I believe teaching works best when it stays honest about the gap between theory and practice, and helps students close it themselves. My own research trains me to ask questions before offering answers, and I want my classroom to work the same way: grounded in real organizational problems, open to debate, and generous with mentorship outside class hours. I see teaching and research as one activity, not two, and I want students to leave my courses more curious than when they arrived.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="title">MBA, Human Resource Management</div>
+      <div class="meta">University of Chittagong · Session 2023–2024 · CGPA 3.75/4.00</div>
+    </div>
+    <div class="entry">
+      <div class="title">BBA, Human Resource Management</div>
+      <div class="meta">University of Chittagong · Session 2019–2020 · CGPA 3.77/4.00</div>
+    </div>
+    <div class="entry">
+      <div class="title">HSC, Science</div>
+      <div class="meta">Chittagong College · Session 2017–2018 · GPA 5.00/5.00</div>
+    </div>
+    <div class="entry">
+      <div class="title">SSC, Science</div>
+      <div class="meta">Bangladesh Mahila Samity Girls' High School & College · Session 2015–2016 · GPA 5.00/5.00</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <div class="entry">
+      <div class="title">Research Assistant</div>
+      <div class="meta">Dept. of Human Resource Management, University of Chittagong · under Mohammed Rafiqul Islam, Assistant Professor · Aug 2025–Present</div>
+    </div>
+    <div class="entry">
+      <div class="title">Master's Research Project (Completed)</div>
+      <div class="meta">A Comparative Study of Male and Female Employees: Examining the Synergy Between Academic Achievement and Career Advancement in Corporate Organizations</div>
+    </div>
+    <div class="entry">
+      <div class="title">Ongoing Research</div>
+      <ul>
+        <li>Algorithmic Standardization and the Risk of Employee Homogenization in AI-Driven HR</li>
+        <li>Driving Psychological Well-Being Through Sustainable HRM: The Mediating Role of Meaningful Work</li>
+        <li>The Engagement Paradox: How AI in HRM Both Enables and Erodes Employee Connection</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="entry">
+      <div class="title">Sales & HR Intern, Berger Paints Bangladesh Limited</div>
+      <div class="meta">Apr 2025–Jul 2025</div>
+      <ul>
+        <li>Gained practical exposure to recruitment, onboarding, employee records, and HR operations in a multinational manufacturing organization</li>
+        <li>Conducted employee satisfaction and customer preference assessments and supported presentation of findings</li>
+        <li>Observed factory operations, product lines, and cross-functional workflows</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Leadership & Extracurricular</h2>
+    <div class="entry">
+      <div class="title">Head, Research & Academics — Chittagong University HR Club</div>
+      <div class="meta">Oct 2024–Nov 2025</div>
+      <ul><li>Led research initiatives and coordinated career development workshops for club members</li></ul>
+    </div>
+    <div class="entry">
+      <div class="title">Co-Lead, Economic Policy Team — Youth Policy Forum</div>
+      <div class="meta">Mar 2025–Present</div>
+      <ul><li>Led research and team coordination on economic, employment, and business policy issues</li></ul>
+    </div>
+    <div class="entry">
+      <div class="title">Leadership Facilitator — Bangladesh Youth Leadership Center</div>
+      <div class="meta">Oct 2023–Aug 2025</div>
+      <ul><li>Facilitated leadership training for youth cohorts; mentored two teams that secured external Scale-Up Fund grants</li></ul>
+    </div>
+    <div class="entry">
+      <div class="title">Volunteer — Charulota</div>
+      <div class="meta">Since 2nd year of university</div>
+      <ul><li>Taught underprivileged students in an underserved community along my daily university commute</li></ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="cols">
+      <div>
+        <div class="entry"><div class="title" style="font-size:0.9rem;color:var(--sage);">Research & HR</div>
+        <div class="tags">
+          <span class="tag">Recruitment & Onboarding</span>
+          <span class="tag">Literature Review</span>
+          <span class="tag">Survey Design</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Academic Writing</span>
+          <span class="tag">Policy Research</span>
+        </div></div>
+      </div>
+      <div>
+        <div class="entry"><div class="title" style="font-size:0.9rem;color:var(--sage);">Leadership & Tools</div>
+        <div class="tags">
+          <span class="tag">Mentoring</span>
+          <span class="tag">Public Speaking</span>
+          <span class="tag">SPSS</span>
+          <span class="tag">Smart PLS</span>
+          <span class="tag">R (Basic)</span>
+          <span class="tag">Zotero</span>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Academic Interests</h2>
+    <div class="tags">
+      <span class="tag">Strategic HRM</span><span class="tag">Organizational Behavior</span>
+      <span class="tag">Employee Well-being</span><span class="tag">Sustainable HRM</span>
+      <span class="tag">HR Analytics</span><span class="tag">Talent Management</span>
+      <span class="tag">Gender and Work</span><span class="tag">Employment Policy</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <ul>
+      <li>University Merit Scholarship, University of Chittagong (2026)</li>
+      <li>Talent Pool Scholarship, University of Chittagong (2022)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Hobbies & Interests</h2>
+    <p class="lede">Volunteering and community work, reading and writing, dancing, listening to friends and guiding them through their problems, scrutinizing and analyzing things closely, and learning new English words.</p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <div class="refs">
+      <div class="ref">
+        <div class="title">Shanewaz Mahmood Sohel</div>
+        <div class="meta">Professor, Human Resource Management, University of Chittagong</div>
+        <div class="meta">+8801711306208 · sohel@cu.ac.bd</div>
+      </div>
+      <div class="ref">
+        <div class="title">Md. Aftab Uddin, PhD</div>
+        <div class="meta">Professor, Human Resource Management, University of Chittagong</div>
+        <div class="meta">+880 1711 735 331 · mdaftabuddin@cu.ac.bd</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Faria Jannat Prova · Portfolio</footer>
+</div>
+</body>
+</html>
